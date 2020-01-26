@@ -178,3 +178,22 @@ body {
     outline: 10px solid #d3325f;
     outline-offset: 0.5rem;
 }
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MENU $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+#menu{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../img/banner3.jpg)center/cover fixed no-repeat;
+}
+
+.special {
+    border: 3px solid #d3325f;
+    position:relative;
+}
+
+.special-text {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #d3325f;
+    padding: 0 0.4rem;
+}
