@@ -1,0 +1,132 @@
+.info{
+    background: #c9c1ac
+}
+body {
+    /*font-family: 'Mr Dafoe', cursive;*/
+    font-family: 'Bangers', cursive;
+    color: #c9c1ac;
+}
+
+.primary-color {
+    color: #1a4fda;
+}
+
+.info h2 {
+    word-spacing: 0.4rem;
+}
+
+.info a {
+    transition: color .6s ease-in-out;
+}
+.info a:hover {
+    color: #242424
+}
+
+/*header*/
+
+#header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(/*to right,*/rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.height-90{
+    min-height: calc(100vh - 94px);
+}
+.cb{
+    color: #d3325f;
+}
+.banner h1{
+    border-top: 6px dotted #c9c1ac;
+    border-bottom: 6px dotted #c9c1ac;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: .3s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0%;
+    } 
+    50%{
+        transform: translateX(30px);
+    } 
+    100%{
+        transform: translateX();
+        opacity: 1;
+    }
+}
+
+
+.main-btn{
+    color: #d3325f;
+    font-size: 2rem;
+    border: 2px solid #c9c1ac;
+    transition: all .6s ease-to-out;
+}
+
+.main-btn:hover{
+    color: #242424;
+    border: 2px solid #c9c1ac;
+    background: #c9c1ac;
+}
+
+.order-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: .3s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0%;
+    } 
+    50%{
+        transform: translateX(30px);
+    } 
+    100%{
+        transform: translateX();
+        opacity: 1;
+    }
+}
+
+.header-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #c9c1ac;
+    border-radius: 10px;
+    transition: all 1s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link:hover{
+    color:#d3325f;
+    background: transparent;
+}
+
+@keyframes fromBottom{
+    0%{
+        transform: translateY(-10px);
+    } 
+    50%{
+        transform: translateY(10px);
+    } 
+    100%{
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
