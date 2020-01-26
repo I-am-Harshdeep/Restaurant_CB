@@ -5,6 +5,7 @@ body {
     /*font-family: 'Mr Dafoe', cursive;*/
     font-family: 'Bangers', cursive;
     color: #c9c1ac;
+    background: url(../img/moritz-mentges-2RLRbRkWtpc-unsplash.jpg)center/cover fixed no-repeat;
 }
 
 .primary-color {
@@ -22,7 +23,7 @@ body {
     color: #242424
 }
 
-/*header*/
+/*@@@@@@@@@@@@@@@@@header@@@@@@@@@@@@@@@@@*/
 
 #header{
     min-height: calc(100vh - 94px);
@@ -37,7 +38,7 @@ body {
 .height-90{
     min-height: calc(100vh - 94px);
 }
-.cb{
+.pink-color{
     color: #d3325f;
 }
 .banner h1{
@@ -88,11 +89,11 @@ body {
 
 @keyframes fromRight{
     0%{
-        transform: translateX(-100px);
+        transform: translateX(100px);
         opacity: 0%;
     } 
     50%{
-        transform: translateX(30px);
+        transform: translateX(-30px);
     } 
     100%{
         transform: translateX();
@@ -129,4 +130,51 @@ body {
         transform: translateY(-10px);
         opacity: 1;
     }
+}
+
+/*@@@@@@@@@@@@@@@@@menu items @@@@@@@@@@@@@@@@*/
+.item-container{
+    position: relative;
+    /* for the link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all .6s ease;
+}
+
+.item-img{
+    transition: all .6s ease;
+}
+
+.item-container:hover .item-img {
+    /*hover on item container item-img will change*/
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #d3325f;
+    font-size: 2rem;
+    border-top: 3px solid #d3325f;
+    border-bottom: 3px solid #d3325f;
+    transition: all .6s ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover{
+    color: #242424;
+    border: 3px solid #c9c1ac;
+    background: #c9c1ac;
+}
+
+.item-container:hover {
+    outline: 10px solid #d3325f;
+    outline-offset: 0.5rem;
 }
